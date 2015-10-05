@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GabiBravoUnBotonDI</string>
+    
+    <string name="hello_world">Numero de Pulsaciones</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

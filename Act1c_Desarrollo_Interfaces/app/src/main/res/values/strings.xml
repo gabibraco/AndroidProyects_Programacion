@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Act1c_Desarrollo_Interfaces</string>
+    
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="rojo">rojo</string>
+    <string name="verde">verde</string>
+    <string name="azul">azul</string>
+    <string name="amarillo">amarillo</string>
+    <string name="columna_1">columna_1</string>
+    <string name="columna_2">columna_2</string>
+    <string name="columna_3">columna_3</string>
+    <string name="columna_4">columna_4</string>
+</resources>
