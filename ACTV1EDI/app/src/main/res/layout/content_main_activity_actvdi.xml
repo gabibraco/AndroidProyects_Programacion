@@ -16,7 +16,7 @@
 
     tools:showIn="@layout/activity_main_activity_actvdi"
     tools:context=".MainActivityACTVDI"
-    android:layout_alignBottom="@id/GridLayout"
+    android:layout_alignBottom="@+id/GridLayout"
 
 
     android:scrollIndicators="left|end">

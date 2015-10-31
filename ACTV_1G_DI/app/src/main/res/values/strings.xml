@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ACTV_1G_DI</string>
+    <string name="action_settings">Settings</string>
+    <string name="Imprimir">Imprimir</string>
+    <string name="Copiar">Copiar</string>
+    <string name="Pegar">Pegar</string>
+    <string name="Cortar">Cortar</string>
+    <string name="Seleccionar">Seleccionar</string>
+    <string name="Todo">Seleccionar Todo</string>
+    <string name="Parte">Selecciona una Parte</string>
+    <string name="Salir">Salir</string>
+</resources>

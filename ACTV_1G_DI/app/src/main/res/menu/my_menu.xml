@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/checkbox"
+        android:checkable="true"
+        android:title="@string/Imprimir"/>
+    <item
+        android:id="@+id/Copiar"
+        android:title="@string/Copiar"/>
+    <item
+        android:id="@+id/Pegar"
+        android:title="@string/Pegar"/>
+    <item
+        android:id="@+id/Cortar"
+        android:title="@string/Cortar"/>
+    <item
+        android:id="@+id/Seleccionar"
+        android:title="@string/Seleccionar">
+        <menu>
+            <group
+                android:id="@+id/grupo1"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/Submenu1"
+                    android:title="@string/Todo"/>
+                <item
+                    android:id="@+id/Submenu2"
+                    android:title="@string/Parte"/>
+                <item
+                    android:id="@+id/Submenu3"
+                    android:title="@string/Salir"/>
+            </group>
+        </menu>
+    </item>
+</menu>
+

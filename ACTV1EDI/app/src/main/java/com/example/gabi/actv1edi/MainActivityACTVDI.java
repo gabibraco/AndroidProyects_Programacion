@@ -30,7 +30,6 @@ public class MainActivityACTVDI extends AppCompatActivity {
 
         RelativeLayout RL = (RelativeLayout)findViewById(R.id.relativeLayout);
         GridLayout Gl =(GridLayout)findViewById(R.id.GridLayout);
-
         ScrollView SC =(ScrollView)findViewById(R.id.scrollView);
 
 
