@@ -11,21 +11,29 @@ public class ActivityFragment extends Activity implements ListFragment.ListFragm
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_activity_fragment);
-        //Condicion para comprobar que el fragment no es null que esta en uso
-        if (findViewById(R.id.fragment_container) != null) {
-            // However, if we're being restored from a previous state,
-            // then we don't need to do anything and should return or else
-            // we could end up with overlapping fragments.
-            if (savedInstanceState != null) {
-                return;
-            }
+       //Recojo los datos que he enviado con el intent y se lo asigno a 2 variables
+        Bundle bundle=getIntent().getExtras();
+        String nombre=bundle.getString("nombre");
+        String edad = bundle.getString("anyo");
+
+        //Añado el perfil fragment en el contenedor
+        PerfilFragment perfil =new PerfilFragment();
+        getFragmentManager().beginTransaction().add(R.id.fragment_container,perfil).commit();
+
         }
-    }
+
     //Nuestro listener
     public void onListSelected(int position,String item){
         //Definimos lo que haran
         if (item=="PERFIL"){
-            Toast.makeText(this, "Danos tiempo para implementar " + item, Toast.LENGTH_SHORT).show();
+            PerfilFragment perfil = new PerfilFragment();
+            //Creamos un objeto fragment manager y inicia la transaccion
+            FragmentTransaction transaction=getFragmentManager().beginTransaction();
+            //Reempazamos el conteniddo de nuestro contenedor
+            transaction.replace(R.id.fragment_container,perfil);
+            //Lo cargamos
+            transaction.commit();
+
         }else if(item=="JUEGO"){
             // Create fragment and give it an argument specifying the article it should show
             //Creamos un nuevo fragment

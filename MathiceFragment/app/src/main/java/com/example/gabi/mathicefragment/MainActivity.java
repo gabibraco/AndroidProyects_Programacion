@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
         TimerTask task = new TimerTask() {
             @Override
             public void run() {
-                Intent i=new Intent(getApplicationContext(),ActivityFragment.class);
+                Intent i=new Intent(getApplicationContext(),ActivityPerfil.class);
                 startActivity(i);
             }
         };
