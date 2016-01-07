@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.gabi.mathice_p4.Main2Activity"
+    android:background="#0277bd"
+    tools:showIn="@layout/activity_main2">
+    <fragment
+        android:name="com.example.gabi.mathice_p4.ListFragment"
+        android:id="@+id/list_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        tools:layout="@layout/fragment_list" />
+    <!--Este Fragment contendra el textview sera un fragment dinamco-->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+</LinearLayout>
