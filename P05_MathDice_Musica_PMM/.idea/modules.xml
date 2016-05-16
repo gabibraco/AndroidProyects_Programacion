@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/P05_MathDice_Musica_PMM.iml" filepath="$PROJECT_DIR$/P05_MathDice_Musica_PMM.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/P05_MathDice(Musica)_PMM.iml" filepath="$PROJECT_DIR$/P05_MathDice(Musica)_PMM.iml" />
+>>>>>>> a7d5ad622879e5833adeca8ae2b958866b88a44b
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

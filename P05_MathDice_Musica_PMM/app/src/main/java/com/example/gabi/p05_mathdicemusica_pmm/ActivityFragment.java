@@ -25,6 +25,7 @@ public class ActivityFragment extends Activity implements ListFragment.ListFragm
         if (findViewById(R.id.fragment_container) != null) {
             //Coloco el fragment lista en su contenedor estatico
            PerfilFragment perfilFragment = new PerfilFragment();
+<<<<<<< HEAD
 
             /*
             * Recojo los datos que he enviado con el intent que pasaba a esta activity y se los asigno
@@ -35,11 +36,23 @@ public class ActivityFragment extends Activity implements ListFragment.ListFragm
             //Recojo los datos y los asignoo a dos variables
             String nombre = bundle.getString("nombre");
             String edad = bundle.getString("edad");
+=======
+            //Recojo los datos que he enviado con el intent que pasaba a esta activity y se los asigno
+            //a dos variables.
+            Bundle bundle = getIntent().getExtras();
+            String nombre = bundle.getString("nombre");
+            String edad = bundle.getString("edad");
+
+>>>>>>> a7d5ad622879e5833adeca8ae2b958866b88a44b
             //Muestro en consola los datos recibidos con el intent
             Log.i("Nombre:", nombre);
             Log.i("Edad:", edad);
 
+<<<<<<< HEAD
             //LLamamos al manager para comenzar la transaccion
+=======
+
+>>>>>>> a7d5ad622879e5833adeca8ae2b958866b88a44b
             getFragmentManager().beginTransaction().add(R.id.fragment_container, perfilFragment).commit();
             //Dispositivo pequeño
         }else{
@@ -53,6 +66,7 @@ public class ActivityFragment extends Activity implements ListFragment.ListFragm
         //Definimos lo que haran
         // si es tableta
         //Perfil
+<<<<<<< HEAD
         if (position == 0) {
             if (findViewById(R.id.fragment_container) != null) {
                 Toast.makeText(this, " perfil no esta implementado", Toast.LENGTH_LONG).show();
@@ -99,6 +113,36 @@ public class ActivityFragment extends Activity implements ListFragment.ListFragm
                 }
             }
         }
+=======
+        if (position == 0){
+            Toast.makeText(this," perfil no esta implementado", Toast.LENGTH_LONG).show();
+        }else
+            // si la posición es cero , cargamos el Fragment Perfil.
+            if (position == 1) {
+                if (findViewById(R.id.fragment_container) != null) {
+                    JuegoFragment juego = new JuegoFragment();
+                    //Creamos un objeto fragment manager y inicia la transaccion
+                    FragmentTransaction transaction = getFragmentManager().beginTransaction();
+                    //Reempazamos el conteniddo de nuestro contenedor
+                    transaction.replace(R.id.fragment_container, juego);
+                    //Limpiamos el contenedor
+                    transaction.addToBackStack(null);
+                    //Lo cargamos
+                    transaction.commit();
+
+                } else {
+                    Intent intent = new Intent(this, MainPqGame.class);
+
+                    startActivity(intent);
+                }
+            }else if (position == 2) {
+                Toast.makeText(this, "Danos tiempo para implementar " + item, Toast.LENGTH_SHORT).show();
+            }else if (position == 3) {
+                Toast.makeText(this, "Danos tiempo para implementar " + item, Toast.LENGTH_SHORT).show();
+            }
+    }
+}
+>>>>>>> a7d5ad622879e5833adeca8ae2b958866b88a44b
 
 
 

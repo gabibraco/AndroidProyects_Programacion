@@ -18,12 +18,27 @@ public class MainPqGame extends Activity {
         JuegoFragment gameFragment = new JuegoFragment();
         //Creamos un objeto "transaction" que recoge el fragment manager y inicia la transaccion
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
+<<<<<<< HEAD
         //Remplaza lo que haya en el contenedor por el "gameFragment"
         transaction.replace(R.id.fragment_container_entero, gameFragment);
         //Esto permite que el usuario pueda volver atras
         //Esta parte es un problema ya que manda todos los fragments creados detras de forma que
         //si inicias 20 juegos nuevos, tienes 21 fragments escondidos detras
         transaction.addToBackStack(null);
+=======
+
+
+        //Remplaza lo que haya en el contenedor por el "gameFragment"
+        transaction.replace(R.id.fragment_container_entero, gameFragment);
+        //Esto permite que el usuario pueda volver atras
+
+            /* ------ */
+        //Esta parte es un problema ya que manda todos los fragments creados detras de forma que
+        //si inicias 20 juegos nuevos, tienes 21 fragments escondidos detras
+            /* ------ */
+        transaction.addToBackStack(null);
+
+>>>>>>> a7d5ad622879e5833adeca8ae2b958866b88a44b
         //Lanzamos la transaccion
         transaction.commit();
     }
