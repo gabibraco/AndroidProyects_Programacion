@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                 if (togButton2.isChecked()) {
                     togButton2.setTextColor(0xffffffff);
                 } else {
-                    togButton1.setTextColor(0xff000000);
+                    togButton2.setTextColor(0xff000000);
                 }
             }
         });

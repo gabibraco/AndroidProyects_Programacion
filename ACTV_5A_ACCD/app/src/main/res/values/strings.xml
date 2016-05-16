@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ACTV_5A_ACCD</string>
+    <string name="action_settings">Settings</string>
+    <string name="Nota">Nota Media:</string>
+    <string name="Tutor">Curso Tutor:</string>
+    <string name="Despacho">Despacho:</string>
+    <string name="Curso">Curso:</string>
+    <string name="Ciclo">Ciclo :</string>
+    <string name="edad">Edad:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="id">Id:</string>
+    <string name="insprofe">Inserta Profesor</string>
+    <string name="BorrProfe">Borra Profesor</string>
+    <string name="InsEstu">Inserta Estudiante</string>
+    <string name="BorrarEstu">Borra Estudiante</string>
+    <string name="soloprofe">Solo para Profesores</string>
+    <string name="soloEstu">Solo para Estudiantes</string>
+    <string name="soloid">Solo para Borrar</string>
+</resources>

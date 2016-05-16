@@ -9,7 +9,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_segunda_"
     tools:context="com.example.gabi.actividadsplah.Segunda_Activity">
-    //Añadimos dos etiquetas para que sea mas visible
+   // Añadimos dos etiquetas para que sea mas visible
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

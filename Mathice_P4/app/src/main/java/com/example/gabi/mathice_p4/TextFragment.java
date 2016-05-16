@@ -37,12 +37,10 @@ public class TextFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-
     //Constructor de la clase principla
     public TextFragment() {
         // Required empty public constructor
     }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,8 +56,8 @@ public class TextFragment extends Fragment {
         TextView texto=(TextView) v.findViewById(R.id.textoFragment);
 
         //
-        String so=getArguments().getString("so");
-        texto.setText(so);
+       // String so=getArguments().getString("so");
+        //texto.setText(so);
         return v;
     }
 

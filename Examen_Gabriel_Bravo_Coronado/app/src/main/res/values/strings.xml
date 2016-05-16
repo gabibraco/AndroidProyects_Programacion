@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Examen_Gabriel_Bravo_Coronado</string>
+    <string name="action_settings">Settings</string>
+    <string name="Localizacion">Localizacion</string>
+    <string name="NOMBRE">Nombre</string>
+    <string name="Pegar">Pegar</string>
+    <string name="Copiar">Copiar</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

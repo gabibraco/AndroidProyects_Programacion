@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gabi.actv_5a_accd.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:id="@+id/textViewName"
+        android:layout_alignBaseline="@+id/editTextName"
+        android:layout_alignBottom="@+id/editTextName"
+        android:layout_alignParentStart="true"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:inputType="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/editTextYear"
+        android:layout_toEndOf="@+id/textViewNota"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edad"
+        android:id="@+id/textViewEdad"
+        android:layout_alignBaseline="@+id/editTextYear"
+        android:layout_alignBottom="@+id/editTextYear"
+        android:layout_alignParentStart="true"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextYear"
+        android:inputType="none"
+        android:layout_below="@+id/editTextName"
+        android:layout_toEndOf="@+id/textViewNota"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Ciclo"
+        android:id="@+id/textViewCiclo"
+        android:layout_alignBaseline="@+id/editTextCiclo"
+        android:layout_alignBottom="@+id/editTextCiclo"
+        android:layout_alignParentStart="true"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCiclo"
+        android:inputType="none"
+        android:layout_below="@+id/editTextYear"
+        android:layout_alignStart="@+id/editTextYear"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Curso"
+        android:id="@+id/textViewCurso"
+        android:layout_alignBottom="@+id/editTextCurso"
+        android:layout_alignBaseline="@+id/editTextCurso"
+        android:layout_alignParentStart="true"
+        android:textSize="10dp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextCurso"
+        android:inputType="none"
+        android:layout_below="@+id/editTextCiclo"
+        android:layout_alignStart="@+id/editTextCiclo"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nota"
+        android:id="@+id/textViewNota"
+        android:layout_alignBottom="@+id/editTextNota"
+        android:layout_alignBaseline="@+id/editTextNota"
+        android:layout_alignParentStart="true"
+        android:textSize="10dp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNota"
+        android:inputType="none"
+        android:layout_below="@+id/editTextCurso"
+        android:layout_alignStart="@+id/editTextCurso"
+        android:hint="@string/soloEstu"
+        android:textSize="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Tutor"
+        android:id="@+id/textViewTutor"
+        android:layout_alignBottom="@+id/editTextTutor"
+        android:layout_alignBaseline="@+id/editTextTutor"
+        android:layout_alignParentStart="true"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextTutor"
+        android:inputType="none"
+        android:layout_below="@+id/editTextNota"
+        android:layout_alignStart="@+id/editTextNota"
+        android:hint="@string/soloprofe"
+        android:textSize="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Despacho"
+        android:id="@+id/textViewDespacho"
+        android:layout_alignBottom="@+id/editTextDespacho"
+        android:layout_alignBaseline="@+id/editTextDespacho"
+        android:layout_alignParentStart="true"
+        android:textSize="10dp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextDespacho"
+        android:inputType="none"
+        android:layout_below="@+id/editTextTutor"
+        android:layout_alignStart="@+id/editTextTutor"
+        android:hint="@string/soloprofe"
+        android:textSize="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/id"
+        android:id="@+id/textViewId"
+        android:layout_alignBottom="@+id/editTextId"
+        android:layout_alignBaseline="@+id/editTextId"
+        android:layout_alignParentStart="true"
+        android:textSize="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextId"
+        android:inputType="none"
+        android:layout_below="@+id/editTextDespacho"
+        android:layout_alignStart="@+id/editTextDespacho"
+        android:hint="@string/soloid"
+        android:textSize="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/insprofe"
+        android:id="@+id/btnInsProfesor"
+        android:layout_below="@+id/btnInsEstudiante"
+        android:layout_alignBottom="@+id/btnBorraProfesor"
+        android:layout_alignEnd="@+id/btnInsEstudiante"
+        android:layout_alignParentStart="true"
+        android:textSize="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/BorrProfe"
+        android:id="@+id/btnBorraProfesor"
+        android:textSize="8dp"
+        android:layout_alignTop="@+id/btnConsulProfe"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/InsEstu"
+        android:id="@+id/btnInsEstudiante"
+        android:layout_below="@+id/editTextId"
+        android:layout_alignParentStart="true"
+        android:textSize="8dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/BorrarEstu"
+        android:id="@+id/btnBorraEstudiante"
+        android:textSize="8dp"
+        android:layout_below="@+id/editTextId"
+        android:layout_alignEnd="@+id/btnBorraProfesor" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="CONSULTA ESTUDIANTE"
+        android:id="@+id/btnConsulEstudiante"
+        android:textSize="8dp"
+        android:layout_alignRight="@id/btnBorraEstudiante"
+        android:layout_below="@id/editTextId"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/btnConsulProfe" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="CONSULTA PROFESOR"
+        android:id="@+id/btnConsulProfe"
+        android:textSize="8dp"
+        android:layout_below="@+id/btnConsulEstudiante"
+        android:layout_alignRight="@+id/btnBorraProfesor"
+        android:layout_alignEnd="@+id/btnConsultaAmbos" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:text="Consulta Profesor y Estudiante"
+        android:id="@+id/btnConsultaAmbos"
+        android:layout_below="@+id/btnInsProfesor"
+        android:layout_alignParentStart="true"
+        android:textSize="8dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/btnConsultaAmbos"
+        android:layout_toEndOf="@+id/textViewId"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

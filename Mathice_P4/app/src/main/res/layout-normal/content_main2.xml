@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_main2">
     <fragment
         android:name="com.example.gabi.mathice_p4.PerfilFragment"
-        android:id="@+id/fragment_Perfil"
+        android:id="@+id/fragment_statico"
         class="com.example.gabi.mathice_p4.PerfilFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

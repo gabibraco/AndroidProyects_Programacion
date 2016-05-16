@@ -69,14 +69,14 @@ public class MainActivity extends AppCompatActivity {
         //Generar acciones del context menu
         switch (item.getItemId()) {
             case R.id.mostrar:
-                Intent llamar = new Intent(Intent.ACTION_VIEW);
+               // Intent llamar = new Intent(Intent.ACTION_VIEW);
                 Toast.makeText(getApplicationContext(),"Mostrando", Toast.LENGTH_LONG).show();
-                startActivity(llamar);
+                //startActivity(llamar);
                 return true;
             case R.id.eliminar:
-                Intent mensage = new Intent(Intent.ACTION_VIEW);
+                //Intent mensage = new Intent(Intent.ACTION_VIEW);
                 Toast.makeText(getApplicationContext(),"Eliminando", Toast.LENGTH_LONG).show();
-                startActivity(mensage);
+                //startActivity(mensage);
                 return true;
         }
         return super.onContextItemSelected(item);

@@ -36,6 +36,7 @@
             android:layout_margin="5dp"
             android:padding="10dp"
             android:checked="false"
+
             android:textOff="Ahora somos negras"
             android:textOn="Ahora somos blancas" />
 

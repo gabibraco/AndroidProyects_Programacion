@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Tiempo">
+        <item>15 Segundos</item>
+        <item>30 Segundos</item>
+        <item>1 Minuto</item>
+        <item>2 Minutos</item>
+        <item>5 Minutos</item>
+        <item>10 Minutos</item>
+        <item>30 Minutos</item>
+    </string-array>
+    <string-array name="Tiempos">
+        <item>15 Segundos</item>
+        <item>30 Segundos</item>
+        <item>1 Minuto</item>
+        <item>2 Minutos</item>
+        <item>5 Minutos</item>
+        <item>10 Minutos</item>
+        <item>30 Minutos</item>
+    </string-array>
+</resources>

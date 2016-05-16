@@ -27,8 +27,8 @@ public class FragmentPerfil extends Fragment implements View.OnClickListener {
     //DECLARACION DE NUESTRAS VARIABLES,OBJETOS Y VIEWS
     Button BtnGuardar;
     // campos de texto
-    EditText edit_text1;
-    EditText edit_text2 ;
+    EditText editText1;
+    EditText editText2 ;
     //nuestro callback
     private OnFragmentBotonListener mListener;
     //Declaramos nuestro SharedPrefereences
@@ -82,11 +82,11 @@ public class FragmentPerfil extends Fragment implements View.OnClickListener {
         String Nombre = prefs.getString("nombre", "Introduzca su nombre");
         String Apellido = prefs.getString("apellido", "Introduzca su Apellido");
         //Asignamos a nuestros edit text las variables donde recuperamos los datos almacenados
-        edit_text1 = (EditText) v.findViewById(R.id.editApellidos);
-        edit_text2 = (EditText) v.findViewById(R.id.editnombre);
+        editText1 = (EditText) v.findViewById(R.id.editApellidos);
+        editText2 = (EditText) v.findViewById(R.id.editnombre);
 
-        edit_text1.setText(Nombre);
-        edit_text2.setText(Apellido);
+        editText1.setText(Nombre);
+        editText2.setText(Apellido);
         //Instancamos nuestro boton para lanzar la camara y el textview donde se colocara el path
         final Button boton=(Button) v.findViewById(R.id.BtnFoto);
         final TextView fichero=(TextView) v.findViewById(R.id.textView2);
@@ -193,8 +193,8 @@ public class FragmentPerfil extends Fragment implements View.OnClickListener {
      */
     public void onClick(View v) {
         // recupero el valor en string de los campos y asigno los valores a dos constantes.
-        String uno  = edit_text1.getText().toString();
-        String dos = edit_text2.getText().toString();
+        String uno  = editText1.getText().toString();
+        String dos = editText2.getText().toString();
         //ALMACENAMOS LA INFORMACION CON SHAREDPREFERENCES
         SharedPreferences.Editor editor = prefs.edit();
         editor.putString("nombre", uno);

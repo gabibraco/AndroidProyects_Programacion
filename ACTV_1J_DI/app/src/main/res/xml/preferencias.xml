@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout="@layout/preferencia"
+    android:title="@string/action_settings"
+    >
+
+    <PreferenceCategory
+        android:title="General"
+
+         >
+        <PreferenceScreen
+            android:key="opcion1"
+            android:title="Fondos"
+            android:dialogTitle="Tiempo de Espera de Pantalla"
+            >
+            <Preference
+                android:key="op1"
+                android:title=" Pantalla de Inicio"/>
+            <Preference
+                android:key="op2"
+                android:title=" Pantalla de Bloqueo"/>
+            <Preference
+                android:key="op3"
+                android:title=" Pantalla de Bloqueo y Inicio"/>
+        </PreferenceScreen>
+        <EditTextPreference
+            android:key="opcion2"
+            android:title="Panel de Notificaciones" />
+        <EditTextPreference
+            android:key="opcion3"
+            android:title="Brillo"
+          />
+        <CheckBoxPreference
+            android:key="opcion4"
+            android:title="Girar Automaticamente" />
+        <ListPreference
+            android:key="opcion5"
+            android:title="Tiempo de Espera de Pantalla"
+            android:dialogTitle="Tiempo de Espera de Pantalla"
+            android:entries="@array/Tiempo"
+            android:entryValues="@array/Tiempos"
+            android:icon="@mipmap/ic_navigate_next_white_24dp"
+            />
+        <CheckBoxPreference
+            android:key="opcion6"
+            android:title="Salvapantallas"
+            android:buttonTint="@color/colorPrimaryDark"
+
+            android:summaryOff="Desactivado"
+            android:summaryOn="Activado"
+            />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Fuente"/>
+
+</PreferenceScreen>

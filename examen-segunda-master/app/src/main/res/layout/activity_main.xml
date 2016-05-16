@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="es.florida_uni.dam.examensegundaevaluacin.MainActivity">
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Velocidad tortuga:"
+        android:id="@+id/lblTortuga"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true" />
+
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/velocidadTortuga"
+        android:entries="@array/velocidades"
+        android:prompt="@string/velocidad_prompt"
+        android:layout_alignBottom="@+id/lblTortuga"
+        android:layout_toRightOf="@id/lblTortuga"
+        />
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progresoTortuga"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/lblTortuga"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Velocidad liebre:"
+        android:id="@+id/lblLiebre"
+        android:layout_alignBottom="@+id/velocidadLiebre"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/velocidadLiebre"
+        android:entries="@array/velocidades"
+        android:prompt="@string/velocidad_prompt"
+        android:layout_below="@+id/progresoTortuga"
+        android:layout_toRightOf="@+id/lblTortuga"
+        />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progresoLiebre"
+        android:layout_below="@+id/lblLiebre"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:layout_alignEnd="@+id/progresoTortuga" />
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comenzar Carrera"
+        android:id="@+id/btnComenzar"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/progresoLiebre"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar velocidades"
+        android:id="@+id/btnVelocidades"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnComenzar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saludar"
+        android:id="@+id/btnSaludar"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnVelocidades"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

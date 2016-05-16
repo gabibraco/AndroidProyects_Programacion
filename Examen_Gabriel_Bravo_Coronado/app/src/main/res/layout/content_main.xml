@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/NOMBRE"
+        android:id="@+id/TextoNombre"
+        android:textColor="#090909"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Localizacion"
+        android:id="@+id/TextoLocalizacin"
+        android:layout_marginTop="41dp"
+        android:textColor="#070707"
+        android:layout_below="@+id/TextoNombre"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_above="@+id/TextoLocalizacin"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/TextoNombre"
+        android:editable="true"
+        android:clickable="true"
+        android:contextClickable="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignBottom="@+id/TextoLocalizacin"
+        android:layout_toEndOf="@+id/TextoLocalizacin"
+        android:editable="true"
+        android:clickable="true"
+        android:contextClickable="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inscrito"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hombre"
+        android:id="@+id/checkBox2"
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mujer"
+        android:id="@+id/checkBox3"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/checkBox2"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/checkBox3">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:text="New Text"
+                android:id="@+id/textView"
+                android:background="#b3acac" />
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:text="New Text"
+                android:id="@+id/textView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="92dp"
+                android:background="#b3acac" />
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:text="New Text"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2"
+                android:layout_marginTop="22dp"
+                android:background="#b3acac" />
+
+            <TextView
+                android:layout_width="91dp"
+                android:layout_height="85dp"
+                android:text="New Text"
+                android:id="@+id/textView4"
+                android:layout_alignEnd="@+id/textView2"
+                android:background="#b3acac" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/LinerLayout">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir"
+            android:id="@+id/button" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar"
+            android:id="@+id/button2" />
+    </LinearLayout>
+
+</RelativeLayout>

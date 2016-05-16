@@ -19,24 +19,21 @@ public class ActivityPerfil extends Activity implements PerfilFragment.OnFragmen
 
 
         //CARGAMOS EL FRAGMENTO EN SU CONTENEDOR ESTATICO
-        //PerfilFragment perfil = (PerfilFragment) getFragmentManager().findFragmentById(R.id.fragment_Perfil);
-
-
+        PerfilFragment perfil = (PerfilFragment) getFragmentManager().findFragmentById(R.id.fragment_Perfil);
         TextView nombrePerfil = (TextView) findViewById(R.id.TextoNombrePerfil);
         TextView edadPerfil = (TextView) findViewById(R.id.TextoEdadPerfil);
     }
 
-
+    /*
+    Definimos la interfaz del perfilfragment
+     */
     @Override
     public void onFragmentInteraction(String a, String b) {
         // Recojo los datos introducidos en el EditText y los almaceno
-
         Intent i = new Intent(getApplicationContext(), ActivityFragment.class);
         i.putExtra("nombre", a);
         i.putExtra("anyo", b);
         startActivity(i);
     }
-
-
-    }
+}
 

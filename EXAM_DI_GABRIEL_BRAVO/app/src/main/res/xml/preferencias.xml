@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout="@layout/preferencia"
+    android:title="@string/action_settings"
+    >
+    <CheckBoxPreference
+        android:key="opcion6"
+        android:title="Activado"
+        android:buttonTint="@color/colorPrimaryDark"
+        android:summaryOff="Desactivado"
+        android:summaryOn="Activado"
+        />
+        <CheckBoxPreference
+            android:key="opcion4"
+            android:title="Modo Silencioso"
+            android:summaryOff="El modo silencioso esta desactivado"
+            android:summaryOn="El modo silencioso esta Activado"/>
+    <PreferenceScreen
+        android:key="opcion1"
+        android:title="Tonos">
+        <Preference
+            android:key="op1"
+            android:title=" Classic"/>
+        <Preference
+            android:key="op2"
+            android:title=" Marimba"/>
+        <Preference
+            android:key="op3"
+            android:title=" Piano"/>
+        <Preference
+            android:key="op4"
+            android:title=" Pinball"/>
+    </PreferenceScreen>
+
+</PreferenceScreen>

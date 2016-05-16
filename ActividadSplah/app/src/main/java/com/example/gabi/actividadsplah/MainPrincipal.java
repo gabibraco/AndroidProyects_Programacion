@@ -49,10 +49,9 @@ public class MainPrincipal extends Activity {
             @Override
             public void run() {
                 //Ponemos en marcha nuestra Segunda Activity
-                Intent mainIntent = new Intent().setClass(
-                        MainPrincipal.this, Segunda_Activity.class);
+                Intent mainIntent = new Intent().setClass(MainPrincipal.this, Segunda_Activity.class);
                 startActivity(mainIntent);
-                //Y lo finalizamos
+                //Y lo finalizamos la destruimos para evitar que el usurio retorne a ella con el boton atras
                 finish();
             }
         };

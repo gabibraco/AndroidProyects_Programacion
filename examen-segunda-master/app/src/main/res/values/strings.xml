@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Examen Segunda Evaluación</string>
+
+    <string name="velocidad_prompt">Elige velocidad</string>
+
+    <string name="lenta">Lenta</string>
+    <string name="normal">Normal</string>
+    <string name="rapida">Rápida</string>
+
+    <string-array name="velocidades">
+        <item>@string/lenta</item>
+        <item>@string/normal</item>
+        <item>@string/rapida</item>
+    </string-array>
+
+</resources>

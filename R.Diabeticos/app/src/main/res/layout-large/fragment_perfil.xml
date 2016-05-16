@@ -1,0 +1,244 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:padding="15dp"
+    tools:context=".FragmentPerfil"
+    android:background="#c21759e8"
+    android:orientation="vertical"
+    android:id="@+id/fragment_Perfil">
+
+<!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView4"
+        android:background="#c4c1c1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:text="Foto"
+        android:id="@+id/BtnFoto"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignStart="@+id/imageView4" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/TextNombre"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/BtnFoto"
+        android:textAlignment="center"
+        android:layout_toStartOf="@+id/checkBox" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editnombre"
+        android:layout_below="@+id/TextNombre"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/TextEdad"
+        android:layout_alignEnd="@+id/TextNombre" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Apellidos"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/TextApellidos"
+        android:layout_weight="0.06"
+        android:layout_alignTop="@+id/TextNombre"
+        android:textAlignment="center"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/TextNombre" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:id="@+id/BtnGuardar"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aqui tu Path!!!!!"
+        android:id="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView4" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Teléfono"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/TextTelefono"
+        android:textAlignment="center"
+        android:layout_below="@+id/editnombre"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/TextDirec" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTelefono"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextTelefono"
+        android:layout_alignParentLeft="true"
+        android:layout_toStartOf="@+id/TextDirec" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Dirección"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/TextDirec"
+        android:layout_weight="0.06"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/TextTelefono"
+        android:layout_alignBottom="@+id/TextTelefono"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/editnombre" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_below="@+id/TextDirec"
+        android:layout_toRightOf="@+id/editTelefono" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/TextCorreo"
+        android:textAlignment="center"
+        android:layout_below="@+id/editTelefono"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/editText" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextemail"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextCorreo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:hint="example@recetas.com" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Edad"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/TextEdad"
+        android:textAlignment="center"
+        android:layout_below="@+id/editTextemail"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/TextApellidos" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEdad"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TextEdad"
+        android:layout_alignParentLeft="true"
+        android:hint="Mayor 18"
+        android:layout_toStartOf="@+id/TextDirec" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editApellidos"
+        android:layout_alignBottom="@+id/editnombre"
+        android:layout_toEndOf="@+id/editnombre" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sexo"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/textsexo"
+        android:textAlignment="center"
+        android:layout_below="@+id/editTextemail"
+        android:layout_alignEnd="@+id/editApellidos"
+        android:layout_toEndOf="@+id/TextEdad" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hombre"
+        android:id="@+id/checkBox"
+        android:layout_alignBaseline="@+id/editTextEdad"
+        android:layout_alignBottom="@+id/editTextEdad"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mujer"
+        android:id="@+id/checkBox2"
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_alignEnd="@+id/textsexo"
+        android:layout_marginEnd="29dp" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Nacionalidad"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/textView5"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextEdad"
+        android:layout_toStartOf="@+id/editText3" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignEnd="@+id/editTextEdad" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Pais"
+        android:textColor="#040404"
+        android:textSize="15dp"
+        android:id="@+id/textView6"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_alignEnd="@+id/textsexo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView6"
+        android:layout_toEndOf="@+id/editText2" />
+
+</RelativeLayout>

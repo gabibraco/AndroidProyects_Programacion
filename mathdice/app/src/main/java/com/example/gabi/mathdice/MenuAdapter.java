@@ -24,7 +24,7 @@ public class MenuAdapter extends ArrayAdapter<String> {
 
     //Metodo getView que monta el View y lo envia para ser usado (es llamado 1 vez por elemento)
     public View getView (int position, View convertView, ViewGroup parent){
-        //Creamos el inflater
+        //Creamos el inflater para recoger nuestro layout
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         //Comprobamos que no exista el convertView, si no existe creamos uno nuevo
         if(convertView == null){
